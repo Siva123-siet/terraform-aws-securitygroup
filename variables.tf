@@ -1,19 +1,25 @@
 variable "sg_name" {
-  default = string
+  type = string
 }
 
 variable "description" {
-  default = string
+  type = string
 }
 
 variable "project" {
-  default = string
+  type = string
 }
 
 variable "environment" {
-  default = string
+  type = string
 }
 
 variable "vpc_id" {
-  default = string
+  type = string
+}
+
+variable "sg_tags" {
+  type = map(string)
+  default = {
+  }
 }
